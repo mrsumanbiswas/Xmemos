@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package memos.api.v1;
+
+import "google/api/annotations.proto";
+
+option go_package = "gen/api/v1";
+
+service AiService {
+  rpc Chat(ChatRequest) returns (ChatResponse) {
+    option (google.api.http) = {
+      post: "/api/v1/ai/chat"
+      body: "*"
+    };
+  }
+}
+
+message ChatRequest {
+  string message = 1;
+}
+
+message ChatResponse {
+  string response = 1;
+}

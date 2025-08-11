@@ -19,3 +19,7 @@ dist
 
 # VSCode settings
 .vscode
+
+# AI
+ai/venv/
+ai/.env

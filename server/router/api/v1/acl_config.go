@@ -16,6 +16,7 @@ var authenticationAllowlistMethods = map[string]bool{
 	"/memos.api.v1.MemoService/ListMemos":                         true,
 	"/memos.api.v1.MarkdownService/GetLinkMetadata":               true,
 	"/memos.api.v1.AttachmentService/GetAttachmentBinary":         true,
+	"/memos.api.v1.AiService/Chat":                                true,
 }
 
 // isUnauthorizeAllowedMethod returns whether the method is exempted from authentication.
